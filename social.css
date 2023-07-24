@@ -4,10 +4,12 @@
     padding: 0;
     font-family: Helvetica, Arial, sans-serif;
     /* border: 1px solid #000; */
+    font-family: Helvetica, Arial;
 }
 
 body,
 html {
+    font-size: 13px;
     width: 100%;
 }
 
@@ -21,10 +23,72 @@ a{
     /* align horizontal */
 }
 
+.main, .left{
+    flex-direction: row;
+}
+
+.main{
+    margin-top: 40px;
+    /* border: 1px solid #000; */
+    column-gap: 80px;
+    justify-content: center;
+}
+
+.fixed{
+    width: 244.91px;
+    height: 530px;
+    background-image: url("https://www.socialmediaexaminer.com/wp-content/uploads/2021/11/instagram-search-results-content.png");
+    /* background-position: center; */
+    background-size: cover;
+    border-radius: 30px;
+    box-shadow:
+    0px 0px 5px 7px black,
+    0px 0px 7px 8px ghostwhite,
+    0px 0px 0px 15px black;
+    /* animation: slideshow 6s ease-in infinte; */
+}
+
+.camera{
+    position: relative;
+    left: 85px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    border: 1px solid black;
+    box-shadow:
+    0px 0px 10px 1px black inset,
+    1px -1px 5px 0.1px white inset,
+    -1px 0px 0px 5px rgb(34, 60, 111) inset;
+    
+    
+}
+
+.left{
+    width: 247px;
+    height: 539px;
+    border-radius: 30px;
+    margin-left: -269px;
+    margin-top: 10px;
+    z-index: 1;
+    background-color: black;
+    box-shadow:
+    0px 0px 5px 7px black,
+    0px 0px 7px 8px ghostwhite,
+    0px 0px 0px 15px black;
+    
+}
+
+.left img{
+    position: absolute;
+    box-shadow: 0px 0px 2px 1px black inset;
+    border-radius: 40px;
+}
+
 .cont1 {
     width: 350px;
     height: 460px;
-    margin: 50px auto;
+    margin-bottom: 50px;
     justify-content: space-around;
     align-items: center;
     border: 1px solid #dbdbdb;
@@ -33,7 +97,8 @@ a{
  .cont1 img {
     width: 200px;
     height: 80px;
-    margin: 10px 0;
+    margin-top: 10px;
+    margin-bottom: -10px;
     /* border: 1px solid #000; */
 }
 
@@ -115,12 +180,14 @@ form label {
 }
 
 .cont2 p{
-    margin: 20px auto;
-    padding-left: 50px;
+    margin: 20px 70px;
+    padding: 0px;
     color:#262626;
 }
 
-
+.cont2 a{
+    color: dodgerblue;
+}
 
 .cont3{
     width: 350px;
@@ -137,8 +204,15 @@ form label {
 
 .applinks{
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    column-gap: 15px;
 }
+
+.applinks > a >  img{
+    width: 130px;
+    height: 50px;
+}
+
 .cont3 img{
     width: 150px;
     height: 50px;
@@ -177,4 +251,36 @@ form label {
     width: 100px;
     border: none;
     color: #737373;
+}
+
+
+@media only screen and (max-width: 875px){
+    .fixed, .left{
+        display: none;
+    }
+}
+
+@keyframes slideshow {
+    20%{
+        opacity: 1;
+    }
+    40%,90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.left img:nth-child(4){
+    animation: slideshow 15s infinite;
+}
+.left img:nth-child(3){
+    animation: slideshow 15s 4s infinite;
+}
+.left img:nth-child(2){
+    animation: slideshow 15s 7s infinite;
+}
+.left img:nth-child(1){
+    animation-delay: 15s;
 }
