@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    /* border: 1px solid #000; */
+    font-family: Helvetica, Arial;
+}
+
+body,
+html {
+    font-size: 13px;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    flex-flow: column;
+    /* align horizontal */
+}
+
+.main, .left{
+    flex-direction: row;
+}
+
+.main{
+    margin-top: 40px;
+    /* border: 1px solid #000; */
+    column-gap: 80px;
+    justify-content: center;
+}
+
+.fixed{
+    width: 244.91px;
+    height: 530px;
+    background-image: url("https://www.socialmediaexaminer.com/wp-content/uploads/2021/11/instagram-search-results-content.png");
+    /* background-position: center; */
+    background-size: cover;
+    border-radius: 30px;
+    box-shadow:
+    0px 0px 5px 7px black,
+    0px 0px 7px 8px ghostwhite,
+    0px 0px 0px 15px black;
+    /* animation: slideshow 6s ease-in infinte; */
+}
+
+.camera{
+    position: relative;
+    left: 85px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    border: 1px solid black;
+    box-shadow:
+    0px 0px 10px 1px black inset,
+    1px -1px 5px 0.1px white inset,
+    -1px 0px 0px 5px rgb(34, 60, 111) inset;
+    
+    
+}
+
+.left{
+    width: 247px;
+    height: 539px;
+    border-radius: 30px;
+    margin-left: -269px;
+    margin-top: 10px;
+    z-index: 1;
+    background-color: black;
+    box-shadow:
+    0px 0px 5px 7px black,
+    0px 0px 7px 8px ghostwhite,
+    0px 0px 0px 15px black;
+    
+}
+
+.left img{
+    position: absolute;
+    box-shadow: 0px 0px 2px 1px black inset;
+    border-radius: 40px;
+}
+
+.cont1 {
+    width: 350px;
+    height: 460px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+}
+
+ .cont1 img {
+    width: 200px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    /* border: 1px solid #000; */
+}
+
+form {
+    width: 260px;
+    height: 160px;
+    justify-content: space-between;
+}
+
+form label {
+    font-size: 0.8em;
+    color: #262626;
+}
+
+#save {
+    margin-right: 8px;
+    border-color: #fafafa;
+    transform: scale(1.5);
+}
+
+.inputs {
+    row-gap: 6px;
+}
+
+.inputs input {
+    height: 35px;
+    border-radius: 3px;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    padding-left: 10px;
+}
+
+#login {
+    height: 33px;
+    border-radius: 5px;
+    background-color: #0095f6;
+    color: white;
+    font-size: 1em;
+    border: 0px;
+}
+
+.facebook a {
+    font-size: .9em;
+    text-decoration: none;
+    color: #00376b;
+    font-weight: 500;
+}
+
+.forget {
+    text-decoration: none;
+    font-size: 0.8em;
+    margin-top: -10px;
+    color: #00376b;
+}
+
+.empty {
+    width: 100px;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.or {
+    flex-direction: row;
+    /* border: 1px solid #000; */
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -30px;
+    column-gap: 5px;
+    color: #262626;
+}
+
+.cont2{
+    width: 350px;
+    height: 60px;
+    border: 1px solid #dbdbdb;
+    margin: -30px auto;
+    padding: 20px auto;
+    color: #262626;
+}
+
+.cont2 p{
+    margin: 20px 70px;
+    padding: 0px;
+    color:#262626;
+}
+
+.cont2 a{
+    color: dodgerblue;
+}
+
+.cont3{
+    width: 350px;
+    height: 150px;
+    margin: 50px auto;
+    margin-bottom: 0px;
+}
+.cont3 p{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    /* border: 1px solid #000; */
+}
+
+.applinks{
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.applinks > a >  img{
+    width: 130px;
+    height: 50px;
+}
+
+.cont3 img{
+    width: 150px;
+    height: 50px;
+}
+
+.links{
+    width: 90%;
+    max-width: 800px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    align-content: center;
+}
+
+.links a{
+    padding: 0 auto;
+    text-decoration: none;
+    color: #737373;
+    font-size: 0.8em;
+    margin: 10px 5px;
+}
+
+.last{
+    margin: 10px auto;
+    width: 400px;
+    flex-direction: row;
+    color: #737373;
+    font-size: 0.8em;
+    justify-content: space-evenly;
+    /* border: 1px solid #000; */
+}
+
+.last select{
+    width: 100px;
+    border: none;
+    color: #737373;
+}
+
+
+@media only screen and (max-width: 875px){
+    .fixed, .left{
+        display: none;
+    }
+}
+
+@keyframes slideshow {
+    20%{
+        opacity: 1;
+    }
+    40%,90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.left img:nth-child(4){
+    animation: slideshow 15s infinite;
+}
+.left img:nth-child(3){
+    animation: slideshow 15s 4s infinite;
+}
+.left img:nth-child(2){
+    animation: slideshow 15s 7s infinite;
+}
+.left img:nth-child(1){
+    animation-delay: 15s;
+}
