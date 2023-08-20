@@ -19,8 +19,7 @@ a{
 
 .flex {
     display: flex;
-    flex-flow: column;
-    /* align horizontal */
+    flex-flow: column wrap;
 }
 
 .main, .left{
@@ -140,8 +139,12 @@ form label {
     border: 0px;
 }
 
+.facebook{
+    margin-top: -30px;
+}
+
 .facebook a {
-    font-size: .9em;
+    font-size: 1.1em;
     text-decoration: none;
     color: #00376b;
     font-weight: 500;
@@ -149,7 +152,7 @@ form label {
 
 .forget {
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-top: -10px;
     color: #00376b;
 }
@@ -161,6 +164,7 @@ form label {
 }
 
 .or {
+    width: 300px;
     flex-direction: row;
     /* border: 1px solid #000; */
     justify-content: space-evenly;
@@ -168,6 +172,7 @@ form label {
     margin-top: -30px;
     column-gap: 5px;
     color: #262626;
+    font-size : .9em;
 }
 
 .cont2{
@@ -175,18 +180,21 @@ form label {
     height: 60px;
     border: 1px solid #dbdbdb;
     margin: -30px auto;
-    padding: 20px auto;
+    justify-content: center;
+    align-items: center;
     color: #262626;
 }
 
 .cont2 p{
-    margin: 20px 70px;
-    padding: 0px;
+    position: relative;
+    top: 20px;
     color:#262626;
+    text-align: center;
 }
 
 .cont2 a{
     color: dodgerblue;
+    font-weight: 500;
 }
 
 .cont3{
@@ -210,7 +218,7 @@ form label {
 
 .applinks > a >  img{
     width: 130px;
-    height: 50px;
+    height: 40px;
 }
 
 .cont3 img{
@@ -218,37 +226,38 @@ form label {
     height: 50px;
 }
 
+.footer{
+    width: 100%;
+}
+
 .links{
-    width: 90%;
-    max-width: 800px;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 80%;
+    min-width: 800px;
+    display: flex;
     flex-wrap: wrap;
-    /* border: 1px solid #000; */
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-content: center;
     margin: 0 auto;
     align-content: center;
 }
 
 .links a{
-    padding: 0 auto;
     text-decoration: none;
     color: #737373;
-    font-size: 0.8em;
-    margin: 10px 5px;
+    font-size: .9em;
 }
 
 .last{
     margin: 10px auto;
-    width: 400px;
     flex-direction: row;
     color: #737373;
     font-size: 0.8em;
     justify-content: space-evenly;
-    /* border: 1px solid #000; */
 }
 
 .last select{
-    width: 100px;
+    width: 80px;
     border: none;
     color: #737373;
 }
@@ -257,6 +266,12 @@ form label {
 @media only screen and (max-width: 875px){
     .fixed, .left{
         display: none;
+    }
+}
+@media only screen and (max-width: 400px){
+
+    .rigth{
+        width: 300px;
     }
 }
 
