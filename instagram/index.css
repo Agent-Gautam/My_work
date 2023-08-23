@@ -243,8 +243,8 @@ form label {
     flex-direction: row;
     color: #737373;
     font-size: 0.8em;
-    justify-content: space-evenly;
-    border:1px solid red;
+    justify-content: center;
+    column-gap: 30px;
 }
 
 .last select{
