@@ -29,8 +29,14 @@
                 <img src="https://fontmeme.com/images/instagram-new-logo.png" alt="logo">
                 <form class="flex" action="" method="post">
                     <div class="inputs flex">
-                        <input type="text" placeholder="Phone number, username, or email">
-                        <input type="password" placeholder="Password">
+                        <div class="user">
+                            <input type="text" required>
+                            <span class="placeholder">Phone number, username, or email</span>
+                        </div>
+                        <div class="pass">
+                            <input type="password" required>
+                            <span class="placeholder">Password</span>
+                        </div>
                     </div>
                     <label for="save"><input type="checkbox" name="save" value="save" id="save">Save login info</label>
                     <button id='login'>Log in</button>
