@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
+    scroll-behavior: smooth;
+    scroll-margin-top: 70px;
     background-color: #eeeeee;
     --bgcolor1: #ffffff;
     --bgcolor2: #eeeeee;
