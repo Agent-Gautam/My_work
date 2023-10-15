@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="incrementer.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="string">hello</div>
+    <div class="main flex">
+      <div class="upper flex">
+        <h1>Persons</h1>
+        <h2 id="counter">0</h2>
+      </div>
+      <div class="lower flex">
+        <button class="increment" onclick="increment()">INCREMENT</button>
+        <button class="save flex">
+          <div class="btn-save">SAVE</div>
+          <div class="cart"><div class="caret"></div></div>
+          <div class="dropdown">hello</div>
+        </button>
+        <button class="reset" onclick="reset()">RESET</button>
+      </div>
+    </div>
+    <script src="incrementere.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".btn-save").onclick(function(){
+            $(".upper").hide();
+        })
+    })
+    </script>
+  </body>
+</html>
