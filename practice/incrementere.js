@@ -1,19 +1,25 @@
+$(document).ready(function () {
+    let count = 0;
+    $(".increment").click(function(){           //for increment
+      $("#counter").text(++count);
+    })
 
+    $(".reset").click(function(){               //for reset
+      count = 0;
+      $("#counter").text(count);
+    })
 
-let count = 0;
-let counter = document.getElementById("counter");
+    $(".btn-save").click(function(){
+      $(".dropdown").html(
+        $(".dropdown").html()+`<li>${count}</li><hr>`
+      )
+    })
 
-function increment(){
-    count++;
-    counter.innerText = count;
-}
+  $(".cart").click(function () {
+    $(".dropdown").slideToggle();
+  });
 
-function reset(){
-    count = 0;
-    counter.innerText = count;
-}
+});
 
-function save(){
-    confirm(count);
-}
-
+// remaining work: 
+  // to disable increment and reset button when cart is opened

@@ -11,6 +11,7 @@
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -21,26 +22,22 @@
     <div class="string">hello</div>
     <div class="main flex">
       <div class="upper flex">
-        <h1>Persons</h1>
+        <h1 class="persons">Persons</h1>
         <h2 id="counter">0</h2>
+        <div class="dropdown">
+          <!-- li elements by jquery -->
+        </div>
       </div>
       <div class="lower flex">
         <button class="increment" onclick="increment()">INCREMENT</button>
         <button class="save flex">
           <div class="btn-save">SAVE</div>
           <div class="cart"><div class="caret"></div></div>
-          <div class="dropdown">hello</div>
+          
         </button>
         <button class="reset" onclick="reset()">RESET</button>
       </div>
     </div>
     <script src="incrementere.js"></script>
-    <script>
-      $(document).ready(function(){
-        $(".btn-save").onclick(function(){
-            $(".upper").hide();
-        })
-    })
-    </script>
   </body>
 </html>
