@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Tic Tac Go</title>
+  </head>
+  <body>
+    <!--add sassy sound-->
+    <div class="main container-fluid h-100vh">
+      <div class="row">
+        <div class="left">
+          <!-- <div class="movinglines"></div> -->
+          <div class="heading-out"><h1 class="heading-in">Tic Tac GO</h1></div>
+          <div class="xo flex">
+            <!-- changing colors until play is clicked-->
+            <div class="x"><!--image of cross x--></div>
+            <div class="o"><!--image of big o--></div>
+          </div>
+          <div class="button">
+            <button id="play" type="button">Play</button>
+          </div>
+          <div class="movinglines"></div>
+        </div>
+        <div class="right">
+          <div class="player1">
+            <div class="p1icon"></div>
+            <div id="p2name"></div>
+          </div>
+          <div class="game">
+            <table>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+          <div class="player2">
+            <div class="p2icon"></div>
+            <div id="p2name"></div>
+          </div>
+        </div>
+        <div class="popup">
+          <div class="player1">
+            <div class="iconp1"></div>
+            <div class="namep1"></div>
+          </div>
+          <div class="player2">
+            <div class="iconp2"></div>
+            <div class="namep2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
