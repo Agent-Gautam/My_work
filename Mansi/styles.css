@@ -1,0 +1,28 @@
+/* variables declaration */
+:root{
+    --backgroundcolor : skyblue;
+}
+.navbar{
+    background-color: var(--backgroundcolor);
+}
+.logo-image{
+    height: 150%;
+    width: 200px;
+}
+.robo-image{
+    width: 100%;
+}
+.h1{
+    text-align: center;
+    background-color: var(--backgroundcolor);
+}
+.card-img-top{
+    width:80%;
+    height: 300px;
+}
+.row{
+    margin-top: 50px;
+}
+.ref{
+    height: 95vh;
+}
