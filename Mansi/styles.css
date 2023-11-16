@@ -16,3 +16,13 @@
     text-align: center;
     background-color: var(--backgroundcolor);
 }
+.card-img-top{
+    width:80%;
+    height: 300px;
+}
+.row{
+    margin-top: 50px;
+}
+.ref{
+    height: 95vh;
+}
