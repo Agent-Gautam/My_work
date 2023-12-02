@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body,
+html{
+    width: 100%;
+    height: 100%;
+}
+.testimonials{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: violet;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+}
+.previous,.next{
+    width: 4rem;
+    height: 3rem;
+    background-color: antiquewhite;
+    border-radius: 50%;
+}
+.card{
+    display:none;
+    height: 100%;
+    width: 100%;
+    background-color: skyblue;
+}
+.testimonials :nth-child(2){
+    display: block;
+}
+.indicators{
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: calc(50% - 50px);
+    display: flex;
+    justify-content: space-around;
+}
+.indicator{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: grey;
+}
+.indicators :first-child{
+    background-color: black;
+}
